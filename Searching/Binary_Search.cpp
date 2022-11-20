@@ -38,7 +38,7 @@ int main()
     int index=Binary_Search(v,101);
     if(index==-1)
     {
-        cout<<"Element not found";
+        cout<<"Element not found" << endl <<;
     }
     else
     {
