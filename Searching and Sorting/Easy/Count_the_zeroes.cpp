@@ -4,12 +4,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// } Driver Code Ends
-//Initial template for C++
-
-#include <bits/stdc++.h>
-using namespace std;
-
  // } Driver Code Ends
 
 
