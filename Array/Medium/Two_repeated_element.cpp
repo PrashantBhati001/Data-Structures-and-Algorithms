@@ -12,6 +12,9 @@ class Solution {
   public:
     //Function to find two repeated elements.
     vector<int> twoRepeated (int arr[], int N) {
+
+        //Approach-1 Use rohit negi appraoch of two number at one place.
+        //Approach-2
         vector<int> v;
         int x=0;
         int y=0;
