@@ -1,6 +1,9 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+//Approach-1 (using simple sorting and check)
+//T.C : O(m*nlogn)
+//S.C : O(n) creating arrays
 class Solution {
 public:
      bool findas(vector<int>& nums,int start,int end,vector<int> &temp)
@@ -50,9 +53,11 @@ public:
     }
 };
 
+//Approach-2 (Without sorting)
+//T.C : O(m*n)
+//T.C : O(n) using hash set
 
 
-//Approach 2---Here we are not sorting and instead using a map for storing the values;
 
 // class Solution {
 // public:
