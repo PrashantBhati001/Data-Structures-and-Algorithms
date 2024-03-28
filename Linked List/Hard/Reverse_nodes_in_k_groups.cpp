@@ -16,7 +16,7 @@ public:
     ListNode * reverse(ListNode * head)
     {
         ListNode * curr=head;
-        ListNode * prev=NULL;
+        ListNode * prev= NULL;
         ListNode * forward=NULL;
 
         while(curr)
