@@ -63,8 +63,7 @@ class Solution{
            {
                s.push(x*101+min(x,s.top()%101));
            }
-           
-           
+                    
        }
 };
 
