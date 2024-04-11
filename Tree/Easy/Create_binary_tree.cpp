@@ -17,7 +17,7 @@ class Node{
 };
 
 
-Node * buildTree(Node * root)
+Node * buildTree()
 {
     cout<<"Enter the data"<<endl;
     int data;
@@ -28,12 +28,12 @@ Node * buildTree(Node * root)
         return NULL;
     }
 
-    root=new Node(data);
+    Node * temp=new Node(data);
 
-    root->left=buildTree(root->left);
-    root->right=buildTree(root->right);
+    temp->left=buildTree();
+    temp->right=buildTree();
 
-    return root;
+    return temp;
 }
 
 
@@ -41,7 +41,7 @@ int main()
 {
   Node * root =NULL;
 
-  root =buildTree(root);
+  root =buildTree();
 
   return 0;
 }
