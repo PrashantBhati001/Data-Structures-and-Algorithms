@@ -1,9 +1,10 @@
+
 #include <bits/stdc++.h>
 using namespace std;
 
 class Solution {
 public:
-    vector<int> asteroidCollision(vector<int>& asteroids) {
+    vector<int> asteroidCollision(vector<int> & asteroids) {
         int n=asteroids.size();
         stack<int> st;
         vector<int> ans;
