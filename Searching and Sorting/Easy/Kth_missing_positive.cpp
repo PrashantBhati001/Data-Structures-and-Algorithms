@@ -44,27 +44,26 @@ public:
 
     int findKthPositive(vector<int>& arr, int k) {
 
-        int n=arr.size();
+         int n=arr.size();
         int start=0;
         int end=n-1;
-        int ans=n;
 
         while(start<=end)
         {
             int mid=start+(end-start)/2;
-            if(arr[mid]-mid-1>=k)
-            {
-                ans=mid;
-                end=mid-1;
-            }
-            else
+            int nomissing=arr[mid]-(mid+1);
+
+            if(nomissing<k)
             {
                 start=mid+1;
             }
+            else
+            {
+                end=mid-1;
+            }
         }
-        
 
-        return ans+k;
+        return start+k;
     }
 };
 
